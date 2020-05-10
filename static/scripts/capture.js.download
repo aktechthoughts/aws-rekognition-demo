@@ -64,6 +64,12 @@
             ev.preventDefault();
         }, false);
 
+
+        identifybutton.addEventListener('click', function(ev) {
+            identifyImage();
+            ev.preventDefault();
+        }, false);
+
         clearphoto();
     }
 
@@ -104,6 +110,13 @@
             clearphoto();
         }
     }
+
+
+    function identifyImage() {
+            imageLink.click()
+    }
+
+
 
     // Set up our event listener to run the startup process
     // once loading is complete.

@@ -1,5 +1,4 @@
-## This example is Using AWS Rekognition service to identify images 
-## appearing in webcam.
+## This example is Using AWS Rekognition service to identify images appearing in webcam.
 
 ### How to 
 
@@ -27,3 +26,4 @@ webrtc
 
 ```
 
+![Demo Web Page](https://raw.githubusercontent.com/aktechthoughts/aws-rekognition-demo/master/Image_Identified.png)

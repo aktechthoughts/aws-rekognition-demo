@@ -71,3 +71,8 @@
   top: 10px;  
 }
 
+#ptext{
+  position: absolute;
+  left: 10px;
+  top: 20px;    
+}

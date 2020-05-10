@@ -9,6 +9,8 @@
         <script type="text/javascript"
          src="{{ url_for('static', filename='scripts/capture.js.download') }}"></script>
 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
     </head>
     <body>
 	    <h1 align="Center"> Image Detection Using AWS - Rekognition <h1>
@@ -28,6 +30,8 @@
                 </a>
                 <button id="identifybutton">Identify</button>
             </div>
+
+            <p id = "label"> </p>
         </div>
     </body>
 </html>

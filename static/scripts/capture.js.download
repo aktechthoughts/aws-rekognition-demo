@@ -102,8 +102,7 @@
             var data = canvas.toDataURL('image/png');
             photo.setAttribute('src', data);
 
-            var base64 = canvas.toDataURL();
-            console.log(base64);
+            var base64 = canvas.toDataURL();    
             imageLink.setAttribute('href', base64);
 
         } else {
@@ -113,7 +112,26 @@
 
 
     function identifyImage() {
-            imageLink.click()
+            imagedata = {
+                        "img":imageLink.href.split(',')[1]
+                    }   
+
+        $.ajax({
+            url: '/saveFile',
+            type: 'post',
+            dataType: 'json',
+            contentType: 'application/json',
+            success: function (data) {
+                ptext = document.getElementById("label")
+                ptext.innerHTML = "The Image contains : " + data['result'];
+            },
+            error: function (data) {
+                ptext = document.getElementById("label")
+                ptext.innerHTML = "There is error in request";
+            },
+            data: JSON.stringify(imagedata)
+        });                    
+
     }
 
 

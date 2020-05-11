@@ -3,4 +3,4 @@
 export FLASK_APP=app.py
 export FLASK_RUN_HOST=0.0.0.0
 
-flask run
+python -m flask run --cert=adhoc

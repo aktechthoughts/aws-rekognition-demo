@@ -24,6 +24,16 @@ flask
 AWS-rekognition service.
 webrtc
 
+### Identify image
+```
+Open http://127.0.0.1:5000/ in the browser.
+
 ```
 
-![Demo Web Page](https://raw.githubusercontent.com/aktechthoughts/aws-rekognition-demo/master/Image_Identified.png)
+### Find age of the person in the image
+```
+Open http://127.0.0.1:5000/findage in the browser.
+
+```
+
+

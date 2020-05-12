@@ -13,6 +13,10 @@ def aws_boto3_client():
 def home():
     return render_template("image.html")
 
+@app.route("/findage")
+def age():
+    return render_template("agefinder.html")
+
 
 @app.route('/saveFile', methods=['POST']) 
 def upload_base64_file(): 
